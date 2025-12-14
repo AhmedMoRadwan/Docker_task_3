@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Book Registration</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Library Book Form</h1>
+
+        <form action="/" method="post">
+            <label for="bookTitle">Book Title</label>
+            <input type="text" id="bookTitle" name="bookTitle" placeholder="Enter book title" required />
+
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" placeholder="Enter author's name" required />
+
+            <label for="genre">Genre</label>
+            <select id="genre" name="genre" required>
+                <option value="">-- Select Genre --</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Non-fiction">Non-fiction</option>
+                <option value="Science">Science</option>
+                <option value="History">History</option>
+                <option value="Biography">Biography</option>
+                <option value="Children">Children</option>
+            </select>
+
+            <label for="publishedDate">Published Date</label>
+            <input type="date" id="publishedDate" name="publishedDate" required />
+
+            <label for="isbn">ISBN Number</label>
+            <input type="text" id="isbn" name="isbn" placeholder="Enter ISBN number" required />
+
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
+</body>
+</html>

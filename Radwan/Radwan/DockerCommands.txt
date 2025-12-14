@@ -1,0 +1,37 @@
+Name : Ahmed Mohamed Radwan
+Section : 1
+
+
+********************************************************************
+1. docker ps -a
+   # يعرض كل الكونتينرز القديمة
+
+2. docker stop <container_id>
+   # يوقف الكونتينر اللي شغال
+
+3. docker rm <container_id>
+   # يمسح الكونتينر
+
+4. docker rmi <image_name>
+   # يمسح ال image
+
+5. docker build -t my-library-app .
+   # يبني ال image باسم my-library-app من Dockerfile في الفولدر الحالي
+
+6. docker run -d -p 3000:3000 --name library-backend my-library-app
+   # يشغل الكونتينر في الخلفية ويربط بورت 3000
+
+7. docker logs -f library-backend
+   # يعرض الـ logs ويحدثها live
+
+8. docker exec -it library-backend sh
+   # يدخل جوه الكونتينر ويشغل shell تفاعلي
+
+9. docker stop library-backend
+   # يوقف الكونتينر
+
+10. docker rm library-backend
+    # يمسح الكونتينر
+
+11. docker rmi my-library-app
+    # يمسح الـ image
